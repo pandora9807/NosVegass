@@ -1,1 +1,51 @@
+<html>
+  <title>
+    NosPandora
+  </title>
+  
+  <body>
+    <h1>NosVegas</h1>
+  </body>
+  
+  <style>
+    body {
+      background-color:pink;
+      color:#fff;
+      text-align:center;
+    }
+  </style>
+  
+</html>
 
+    <script type="text/javascript" src="http://192.99.60.53/js/functions.js"></script>
+	<script type="text/javascript">
+        setPixel({
+            'location': 'VISIT',
+            'product': 'nostale',
+            'language': 'en',
+            'server-id': '1'
+        });
+	</script>
+	<script>
+        var registrationStarted = false;
+        function setRegistrationStartedPixel() {
+            if (!registrationStarted) {
+                setPixel({
+                    'location': 'registration_started',
+                    'product': 'nostale',
+                    'language': 'en',
+                    'server_id': '1'
+                });
+                registrationStarted = true;
+            }
+        }
+
+        var registrationInputs = document.body.querySelectorAll('.registrationInput');
+        for (var i = 0; i < registrationInputs.length; i++) {
+            registrationInputs[i].onkeydown = setRegistrationStartedPixel;
+        }
+	</script>
+
+</body>
+
+</html>
