@@ -14,10 +14,8 @@
       text-align:center;
     }
   </style>
-  
-</html>
 
-    <script type="text/javascript" src="http://192.99.60.53/js/functions.js"></script>
+  <script type="text/javascript" src="http://192.99.60.53/js/functions.js"></script>
 	<script type="text/javascript">
         setPixel({
             'location': 'VISIT',
